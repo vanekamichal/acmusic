@@ -5,9 +5,9 @@ import FadeUp from '@/components/FadeUp';
 import PageHero from '@/components/PageHero';
 
 const btnPrimary =
-  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-black bg-gradient-to-br from-[#a07810] to-[#d4a017] hover:opacity-90 hover:-translate-y-0.5 transition-all duration-300';
+  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-black bg-gradient-to-br from-[#2563eb] to-[#3b82f6] hover:opacity-90 hover:-translate-y-0.5 transition-all duration-300';
 const btnOutline =
-  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-[#e8e8f0] border border-white/10 hover:border-[#d4a017] hover:text-[#f0c040] hover:-translate-y-0.5 transition-all duration-300';
+  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-[#e8e8f0] border border-white/10 hover:border-[#3b82f6] hover:text-[#60a5fa] hover:-translate-y-0.5 transition-all duration-300';
 
 function SpecTable({ rows }: { rows: [string, string][] }) {
   return (
@@ -28,20 +28,20 @@ function SpecTable({ rows }: { rows: [string, string][] }) {
 }
 
 const badge = (text: string) => (
-  <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
+  <span className="mb-4 inline-block rounded-full border border-[rgba(59,130,246,0.35)] bg-[rgba(59,130,246,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#60a5fa] uppercase">
     {text}
   </span>
 );
 
 const accentLine = (
-  <span className="mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
+  <span className="mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
 );
 
 export default function AboutPage() {
   return (
     <>
       <Head>
-        <title>O nás – Název Firmy</title>
+        <title>O nás – AC MUSIC</title>
         <meta
           name="description"
           content="Seznamte se s naší společností, našimi prostory a týmem odborníků."
@@ -51,7 +51,7 @@ export default function AboutPage() {
       <PageHero
         title={
           <>
-            Kdo <span className="text-[#f0c040]">Jsme</span>
+            Kdo <span className="text-[#60a5fa]">Jsme</span>
           </>
         }
         description="Představení našich hodnot, vize a prostor, ve kterých pro vás vytváříme ty nejlepší výsledky."
@@ -133,11 +133,11 @@ export default function AboutPage() {
       <section className="w-full py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-10 text-center">
-            <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
+            <span className="mb-4 inline-block rounded-full border border-[rgba(59,130,246,0.35)] bg-[rgba(59,130,246,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#60a5fa] uppercase">
               Galerie
             </span>
             <h2 className="h2-section mb-2 text-white">Naše firma v obrazech</h2>
-            <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
+            <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
             <p className="mt-4 text-[#8888a0]">
               Nahlédněte do našeho prostředí a podívejte se, jak pracujeme.
             </p>

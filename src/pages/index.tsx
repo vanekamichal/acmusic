@@ -4,19 +4,19 @@ import Link from 'next/link';
 import FadeUp from '@/components/FadeUp';
 
 const badge = (text: string) => (
-  <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
+  <span className="mb-4 inline-block rounded-full border border-[rgba(59,130,246,0.35)] bg-[rgba(59,130,246,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#60a5fa] uppercase">
     {text}
   </span>
 );
 
 const accentLine = (
-  <span className="mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
+  <span className="mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
 );
 
 const btnPrimary =
-  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-black bg-gradient-to-br from-[#a07810] to-[#d4a017] hover:opacity-90 hover:-translate-y-0.5 transition-all duration-300 shadow-[0_0_0_0] hover:shadow-[0_0_40px_rgba(212,160,23,0.25)]';
+  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-black bg-gradient-to-br from-[#2563eb] to-[#3b82f6] hover:opacity-90 hover:-translate-y-0.5 transition-all duration-300 shadow-[0_0_0_0] hover:shadow-[0_0_40px_rgba(59,130,246,0.25)]';
 const btnOutline =
-  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-[#e8e8f0] border border-white/10 hover:border-[#d4a017] hover:text-[#f0c040] hover:-translate-y-0.5 transition-all duration-300';
+  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-[#e8e8f0] border border-white/10 hover:border-[#3b82f6] hover:text-[#60a5fa] hover:-translate-y-0.5 transition-all duration-300';
 
 export default function HomePage() {
   return (
@@ -34,13 +34,13 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0f]/30 to-[#0a0a0f]" />
         </div>
         <div className="relative z-10 mx-auto w-[90vw] max-w-[1200px] pt-[72px]">
-          <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-[#d4a017] uppercase">
+          <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-[#3b82f6] uppercase">
             Lokalita · Od roku 20XX
           </p>
           <h1 className="h1-hero mb-5 text-white">
-            Nadpis, který
+            Ahoj, který
             <br />
-            <span className="text-[#f0c040]">zaujme vaše klienty</span>
+            <span className="text-[#60a5fa]">zaujme vaše klienty</span>
           </h1>
           <p className="mb-8 max-w-[55ch] text-lg text-[rgba(232,232,240,0.8)]">
             Stručný a výstižný popis vaší hlavní činnosti. Zde můžete v pár větách představit své
@@ -70,7 +70,7 @@ export default function HomePage() {
                 key={label}
                 className="flex flex-col"
               >
-                <span className="font-head text-4xl leading-none font-bold text-[#f0c040]">
+                <span className="font-head text-4xl leading-none font-bold text-[#60a5fa]">
                   {num}
                 </span>
                 <span className="mt-1 text-xs tracking-widest text-[rgba(232,232,240,0.8)] uppercase">
@@ -154,7 +154,7 @@ export default function HomePage() {
           <FadeUp className="mb-10 text-center">
             {badge('Portfolio')}
             <h2 className="h2-section mb-2 text-white">Co vám nabízíme</h2>
-            <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
+            <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
             <p className="mx-auto mt-4 max-w-[56ch] text-[#8888a0]">
               Přehled hlavních služeb a řešení, které poskytujeme našim klientům na míru.
             </p>
@@ -196,8 +196,8 @@ export default function HomePage() {
                 key={title}
                 delay={i * 0.05}
               >
-                <div className="h-full rounded-2xl border border-white/10 bg-white/[0.04] p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(212,160,23,0.3)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
-                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-[rgba(212,160,23,0.2)] bg-[rgba(212,160,23,0.12)] text-2xl">
+                <div className="h-full rounded-2xl border border-white/10 bg-white/[0.04] p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(59,130,246,0.3)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-[rgba(59,130,246,0.2)] bg-[rgba(59,130,246,0.12)] text-2xl">
                     {icon}
                   </div>
                   <h3 className="h3-card mb-2 text-white">{title}</h3>
@@ -251,9 +251,9 @@ export default function HomePage() {
                 ].map(({ title, sub }) => (
                   <div
                     key={title}
-                    className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.04] p-4 transition-all duration-300 hover:translate-x-1 hover:border-[rgba(212,160,23,0.3)]"
+                    className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.04] p-4 transition-all duration-300 hover:translate-x-1 hover:border-[rgba(59,130,246,0.3)]"
                   >
-                    <span className="h-2.5 w-2.5 flex-shrink-0 rounded-full bg-[#d4a017]" />
+                    <span className="h-2.5 w-2.5 flex-shrink-0 rounded-full bg-[#3b82f6]" />
                     <div>
                       <strong className="text-sm text-white">{title}</strong>
                       <span className="mt-0.5 block text-xs text-[#8888a0]">{sub}</span>

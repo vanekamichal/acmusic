@@ -37,9 +37,9 @@ export default function Navbar() {
           className="flex flex-col gap-0 leading-none"
         >
           <span className="font-outfit text-xl font-extrabold tracking-wide text-white">
-            Název Firmy
+            AC MUSIC
           </span>
-          <span className="text-[0.7rem] tracking-[0.18em] text-[#d4a017] uppercase">
+          <span className="text-[0.7rem] tracking-[0.18em] text-[#3b82f6] uppercase">
             Podtitul nebo Obor
           </span>
         </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
                 href={href}
                 className={`rounded px-3 py-2 text-sm font-medium transition-all duration-300 ${
                   pathname === href
-                    ? 'bg-white/5 text-[#f0c040]'
+                    ? 'bg-white/5 text-[#60a5fa]'
                     : 'text-[#8888a0] hover:bg-white/5 hover:text-white'
                 }`}
               >
@@ -63,7 +63,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/contact"
-              className={`ml-1 rounded bg-gradient-to-br from-[#a07810] to-[#d4a017] px-4 py-2 text-sm font-bold text-black transition-all duration-300 hover:-translate-y-px hover:opacity-90 ${
+              className={`ml-1 rounded bg-gradient-to-br from-[#2563eb] to-[#3b82f6] px-4 py-2 text-sm font-bold text-black transition-all duration-300 hover:-translate-y-px hover:opacity-90 ${
                 pathname === '/contact' ? 'opacity-90' : ''
               }`}
             >
@@ -111,7 +111,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
             className={`rounded px-4 py-3 text-base font-medium transition-all duration-300 ${
               pathname === href
-                ? 'bg-white/5 text-[#f0c040]'
+                ? 'bg-white/5 text-[#60a5fa]'
                 : 'text-[#8888a0] hover:bg-white/5 hover:text-white'
             }`}
           >
@@ -121,7 +121,7 @@ export default function Navbar() {
         <Link
           href="/contact"
           onClick={() => setMenuOpen(false)}
-          className="mt-2 rounded bg-gradient-to-br from-[#a07810] to-[#d4a017] px-4 py-3 text-center text-base font-bold text-black"
+          className="mt-2 rounded bg-gradient-to-br from-[#2563eb] to-[#3b82f6] px-4 py-3 text-center text-base font-bold text-black"
         >
           Kontakt
         </Link>
