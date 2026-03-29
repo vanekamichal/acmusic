@@ -11,3 +11,7 @@
 ## Užitečné AI nástroje
 
 - **[Google Flow](https://labs.google/fx/cs/tools/flow)** - generování a úprava obrázků
+
+## Mobilní zobrazení
+
+- `[ctrl + shift + M]` - Mobilní zobrazení
