@@ -22,8 +22,8 @@ export default function Footer() {
         <div className="mb-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <div className="font-outfit text-xl font-extrabold text-white">Název Firmy</div>
-            <div className="mb-3 text-[0.7rem] tracking-[0.18em] text-[#d4a017] uppercase">
+            <div className="font-outfit text-xl font-extrabold text-white">AC MUSIC</div>
+            <div className="mb-3 text-[0.7rem] tracking-[0.18em] text-[#3b82f6] uppercase">
               Podtitul nebo Obor
             </div>
             <p className="text-sm leading-relaxed text-[#8888a0]">
@@ -41,7 +41,7 @@ export default function Footer() {
               <Link
                 key={label}
                 href={href}
-                className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#f0c040]"
+                className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#60a5fa]"
               >
                 {label}
               </Link>
@@ -57,7 +57,7 @@ export default function Footer() {
               <Link
                 key={label}
                 href={href}
-                className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#f0c040]"
+                className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#60a5fa]"
               >
                 {label}
               </Link>
@@ -71,19 +71,19 @@ export default function Footer() {
             </h4>
             <a
               href="mailto:info@vasedomena.cz"
-              className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#f0c040]"
+              className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#60a5fa]"
             >
               info@vasedomena.cz
             </a>
             <a
               href="tel:+420000000000"
-              className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#f0c040]"
+              className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#60a5fa]"
             >
               +420 000 000 000
             </a>
             <Link
               href="/contact"
-              className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#f0c040]"
+              className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#60a5fa]"
             >
               Ulice 123, Město
             </Link>
@@ -92,7 +92,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-8">
-          <p className="text-sm text-[#8888a0]">© 2024 Název Firmy. Všechna práva vyhrazena.</p>
+          <p className="text-sm text-[#8888a0]">© 2024 AC MUSIC. Všechna práva vyhrazena.</p>
           <div className="flex gap-3">
             {[
               { href: 'https://www.facebook.com', label: 'f', title: 'Facebook' },
@@ -105,7 +105,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={title}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-[#8888a0] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#d4a017] hover:text-[#f0c040]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-[#8888a0] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#3b82f6] hover:text-[#60a5fa]"
               >
                 {label}
               </a>

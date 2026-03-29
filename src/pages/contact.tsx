@@ -21,7 +21,7 @@ const contactItems = [
     value: (
       <a
         href="tel:+420000000000"
-        className="text-[#f0c040] transition-opacity hover:opacity-80"
+        className="text-[#60a5fa] transition-opacity hover:opacity-80"
       >
         +420 000 000 000
       </a>
@@ -33,7 +33,7 @@ const contactItems = [
     value: (
       <a
         href="mailto:info@vasedomena.cz"
-        className="text-[#f0c040] transition-opacity hover:opacity-80"
+        className="text-[#60a5fa] transition-opacity hover:opacity-80"
       >
         info@vasedomena.cz
       </a>
@@ -50,7 +50,7 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Kontakt – Název Firmy</title>
+        <title>Kontakt – AC MUSIC</title>
         <meta
           name="description"
           content="Kontaktujte nás pro více informací o našich službách. Adresa, telefon, e-mail a mapa sídla naší firmy."
@@ -60,7 +60,7 @@ export default function ContactPage() {
       <PageHero
         title={
           <>
-            <span className="text-[#f0c040]">Kontaktujte</span> nás
+            <span className="text-[#60a5fa]">Kontaktujte</span> nás
           </>
         }
         description="Rádi si s vámi popovídáme o vašem projektu nebo budoucí spolupráci. Ozvěte se nám libovolným způsobem."
@@ -72,11 +72,11 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2">
             {/* Info sloupec */}
             <FadeUp>
-              <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
+              <span className="mb-4 inline-block rounded-full border border-[rgba(59,130,246,0.35)] bg-[rgba(59,130,246,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#60a5fa] uppercase">
                 Kde nás najdete
               </span>
               <h2 className="h2-section mb-2 text-white">Kontaktní informace</h2>
-              <span className="mt-3 mb-8 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
+              <span className="mt-3 mb-8 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
 
               <div>
                 {contactItems.map(({ icon, label, value }) => (
@@ -84,7 +84,7 @@ export default function ContactPage() {
                     key={label}
                     className="flex items-start gap-4 border-b border-white/10 py-5 last:border-b-0"
                   >
-                    <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl border border-[rgba(212,160,23,0.2)] bg-[rgba(212,160,23,0.1)] text-lg">
+                    <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl border border-[rgba(59,130,246,0.2)] bg-[rgba(59,130,246,0.1)] text-lg">
                       {icon}
                     </div>
                     <div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                       href={href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded border border-white/10 px-5 py-2 text-sm font-semibold text-[#e8e8f0] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#d4a017] hover:text-[#f0c040]"
+                      className="rounded border border-white/10 px-5 py-2 text-sm font-semibold text-[#e8e8f0] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#3b82f6] hover:text-[#60a5fa]"
                     >
                       {label}
                     </a>
@@ -124,7 +124,7 @@ export default function ContactPage() {
 
             {/* Kontaktní CTA karta */}
             <FadeUp delay={0.1}>
-              <div className="rounded-2xl border border-[rgba(212,160,23,0.25)] bg-gradient-to-br from-[rgba(212,160,23,0.12)] to-[rgba(212,160,23,0.04)] p-10 text-center">
+              <div className="rounded-2xl border border-[rgba(59,130,246,0.25)] bg-gradient-to-br from-[rgba(59,130,246,0.12)] to-[rgba(59,130,246,0.04)] p-10 text-center">
                 <span className="mb-4 block text-4xl">✉️</span>
                 <h3 className="h3-card mb-3 text-[1.4rem] text-white">Poptat spolupráci</h3>
                 <p className="mb-8 leading-relaxed text-[#8888a0]">
@@ -133,13 +133,13 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="tel:+420000000000"
-                  className="mb-3 inline-flex w-full items-center justify-center gap-2 rounded bg-gradient-to-br from-[#a07810] to-[#d4a017] px-7 py-3 text-sm font-semibold text-black transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
+                  className="mb-3 inline-flex w-full items-center justify-center gap-2 rounded bg-gradient-to-br from-[#2563eb] to-[#3b82f6] px-7 py-3 text-sm font-semibold text-black transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
                 >
                   📞 +420 000 000 000
                 </a>
                 <a
                   href="mailto:info@vasedomena.cz"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded border border-white/10 px-7 py-3 text-sm font-semibold text-[#e8e8f0] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#d4a017] hover:text-[#f0c040]"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded border border-white/10 px-7 py-3 text-sm font-semibold text-[#e8e8f0] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#3b82f6] hover:text-[#60a5fa]"
                 >
                   ✉️ info@vasedomena.cz
                 </a>
@@ -154,7 +154,7 @@ export default function ContactPage() {
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-8 text-center">
             <h2 className="h2-section mb-2 text-white">Kde nás najdete</h2>
-            <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
+            <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
           </FadeUp>
           <FadeUp>
             <div className="aspect-[16/7] w-full overflow-hidden rounded-2xl border border-white/10">

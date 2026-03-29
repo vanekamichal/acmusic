@@ -5,9 +5,9 @@ import FadeUp from '@/components/FadeUp';
 import PageHero from '@/components/PageHero';
 
 const btnPrimary =
-  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-black bg-gradient-to-br from-[#a07810] to-[#d4a017] hover:opacity-90 hover:-translate-y-0.5 transition-all duration-300';
+  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-black bg-gradient-to-br from-[#2563eb] to-[#3b82f6] hover:opacity-90 hover:-translate-y-0.5 transition-all duration-300';
 const btnOutline =
-  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-[#e8e8f0] border border-white/10 hover:border-[#d4a017] hover:text-[#f0c040] hover:-translate-y-0.5 transition-all duration-300';
+  'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-[#e8e8f0] border border-white/10 hover:border-[#3b82f6] hover:text-[#60a5fa] hover:-translate-y-0.5 transition-all duration-300';
 
 const projects = [
   {
@@ -63,7 +63,7 @@ export default function ReferencePage() {
   return (
     <>
       <Head>
-        <title>Reference – Název Firmy</title>
+        <title>Reference – AC MUSIC</title>
         <meta
           name="description"
           content="Prohlédněte si naše úspěšné projekty a spokojené klienty, se kterými jsme spolupracovali."
@@ -73,7 +73,7 @@ export default function ReferencePage() {
       <PageHero
         title={
           <>
-            Reference & <span className="text-[#f0c040]">Projekty</span>
+            Reference & <span className="text-[#60a5fa]">Projekty</span>
           </>
         }
         description="Přehled našich úspěšných realizací a dlouhodobých spoluprací s partnery napříč obory."
@@ -83,11 +83,11 @@ export default function ReferencePage() {
       <section className="w-full py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-10">
-            <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
+            <span className="mb-4 inline-block rounded-full border border-[rgba(59,130,246,0.35)] bg-[rgba(59,130,246,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#60a5fa] uppercase">
               Highlights
             </span>
             <h2 className="h2-section mb-2 text-white">Vybrané projekty</h2>
-            <span className="mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
+            <span className="mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
           </FadeUp>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map(({ year, title, desc, tags }, i) => (
@@ -95,9 +95,9 @@ export default function ReferencePage() {
                 key={title}
                 delay={i * 0.06}
               >
-                <div className="h-full overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(212,160,23,0.35)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+                <div className="h-full overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(59,130,246,0.35)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
                   <div className="p-6">
-                    <div className="mb-1 text-xs font-bold tracking-wider text-[#d4a017]">
+                    <div className="mb-1 text-xs font-bold tracking-wider text-[#3b82f6]">
                       {year}
                     </div>
                     <h3 className="h3-card mb-2 text-white">{title}</h3>
@@ -124,11 +124,11 @@ export default function ReferencePage() {
       <section className="w-full border-t border-white/10 bg-[#111118] py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-10">
-            <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
+            <span className="mb-4 inline-block rounded-full border border-[rgba(59,130,246,0.35)] bg-[rgba(59,130,246,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#60a5fa] uppercase">
               Partneři & Klienti
             </span>
             <h2 className="h2-section mb-2 text-white">Kdo nám důvěřuje</h2>
-            <span className="mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
+            <span className="mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
             <p className="mt-4 max-w-[56ch] text-[#8888a0]">
               Měli jsme tu čest spolupracovat s významnými značkami i nadějnými projekty od roku
               20XX.
@@ -140,8 +140,8 @@ export default function ReferencePage() {
                 key={name}
                 delay={i * 0.05}
               >
-                <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.04] p-4 transition-all duration-300 hover:translate-x-1 hover:border-[rgba(212,160,23,0.3)]">
-                  <span className="h-2.5 w-2.5 flex-shrink-0 rounded-full bg-[#d4a017]" />
+                <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.04] p-4 transition-all duration-300 hover:translate-x-1 hover:border-[rgba(59,130,246,0.3)]">
+                  <span className="h-2.5 w-2.5 flex-shrink-0 rounded-full bg-[#3b82f6]" />
                   <div>
                     <strong className="text-sm text-white">{name}</strong>
                     <span className="mt-0.5 block text-xs text-[#8888a0]">{sub}</span>
@@ -157,11 +157,11 @@ export default function ReferencePage() {
       <section className="w-full py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-10 text-center">
-            <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
+            <span className="mb-4 inline-block rounded-full border border-[rgba(59,130,246,0.35)] bg-[rgba(59,130,246,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#60a5fa] uppercase">
               Portfolio
             </span>
             <h2 className="h2-section mb-2 text-white">Prohlédněte si detaily</h2>
-            <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
+            <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
           </FadeUp>
           <FadeUp>
             <div className="mx-auto max-w-[700px] rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center">
@@ -173,7 +173,7 @@ export default function ReferencePage() {
                 href="https://portfolio.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-lg font-semibold text-[#f0c040] transition-opacity hover:opacity-80"
+                className="inline-flex items-center gap-2 text-lg font-semibold text-[#60a5fa] transition-opacity hover:opacity-80"
               >
                 <span>🌐</span>
                 Otevřít portfolio →
