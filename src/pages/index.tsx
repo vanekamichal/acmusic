@@ -35,36 +35,33 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 mx-auto w-[90vw] max-w-[1200px] pt-[72px]">
           <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-[#3b82f6] uppercase">
-            Lokalita · Od roku 20XX
+            HUDEBNÍ NÁSTROJE A TECHNIKA · OD ROKU 1992
           </p>
-          <h1 className="h1-hero mb-5 text-white">
-            Ahoj, který
-            <br />
-            <span className="text-[#60a5fa]">zaujme vaše klienty</span>
+          <h1 className="h1-hero mb-5 text-white uppercase font-outfit">
+            AC MUSIC
           </h1>
-          <p className="mb-8 max-w-[55ch] text-lg text-[rgba(232,232,240,0.8)]">
-            Stručný a výstižný popis vaší hlavní činnosti. Zde můžete v pár větách představit své
-            největší přednosti a přidanou hodnotu, kterou přinášíte svým zákazníkům.
+          <p className="mb-8 max-w-[65ch] text-lg text-[rgba(232,232,240,0.9)] leading-relaxed">
+            Od roku 1992 prodáváme hudební nástroje a techniku a od pandemie i kyslíkové koncentrátory, vodíkové generátory a dezinfekční přístroje. Součástí firmy je i nahrávací a produkční studio Accent s více jak 25-letou historií. Vydáváme zvukové nosiče hudebních skupin a interpretů.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
-              href="/contact"
+              href="/agentura"
               className={btnPrimary}
             >
-              <span>🚀</span> Hlavní Akce
+              <span>🎸</span> Naše Agentura
             </Link>
             <Link
-              href="/about"
+              href="/studio"
               className={btnOutline}
             >
-              <span>ℹ️</span> Více informací
+              <span>🎙️</span> Studio Accent
             </Link>
           </div>
           <div className="mt-16 flex flex-wrap gap-10">
             {[
-              { num: '10+', label: 'Let zkušeností' },
-              { num: '500+', label: 'Spokojených klientů' },
-              { num: '100%', label: 'Spolehlivost' },
+              { num: '1992', label: 'Rok založení' },
+              { num: '30+', label: 'Let zkušeností' },
+              { num: '100%', label: 'Kvalita a servis' },
             ].map(({ num, label }) => (
               <div
                 key={label}
@@ -112,30 +109,27 @@ export default function HomePage() {
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2">
             <FadeUp>
-              {badge('Představení')}
-              <h2 className="h2-section mb-2 text-white">Váš partner pro růst a úspěch</h2>
+              {badge('O nás')}
+              <h2 className="h2-section mb-2 text-white">KVALITA A TRADICE</h2>
               {accentLine}
-              <p className="mt-5 leading-relaxed text-[#8888a0]">
-                Zde popište historii a poslání vaší firmy. Jak jste začínali, co vás motivuje a proč
-                děláte to, co děláte. Tento prostor slouží k vybudování důvěry u potenciálního
-                zákazníka.
+              <p className="mt-5 leading-relaxed text-[#f0f0f5] text-lg italic">
+                &quot;Naše karaoka s živými nástroji a vokály jsou dle hodnocení uživatelů nejlepší na našem trhu.&quot;
               </p>
-              <p className="mt-3 leading-relaxed text-[#8888a0]">
-                Můžete zmínit technologie, které používáte, svůj unikátní přístup k práci nebo
-                špičkový tým expertů, který stojí za vaším úspěchem.
+              <p className="mt-4 leading-relaxed text-[#8888a0]">
+                Zajistíme vystoupení uměleckých souborů, hudebních skupin a interpretů, karaoke show aj.
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-10 flex flex-wrap gap-4">
                 <Link
-                  href="/about"
+                  href="/karaoke"
                   className={btnPrimary}
                 >
-                  Dozvědět se více
+                  Více o Karaoke
                 </Link>
                 <Link
-                  href="/sluzby"
+                  href="/agentura"
                   className={btnOutline}
                 >
-                  Naše nabídka
+                  Naše Agentura
                 </Link>
               </div>
             </FadeUp>
@@ -152,44 +146,44 @@ export default function HomePage() {
       <section className="w-full border-t border-white/10 bg-[#111118] py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-10 text-center">
-            {badge('Portfolio')}
-            <h2 className="h2-section mb-2 text-white">Co vám nabízíme</h2>
+            {badge('Divize')}
+            <h2 className="h2-section mb-2 text-white">Naše specializace</h2>
             <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
             <p className="mx-auto mt-4 max-w-[56ch] text-[#8888a0]">
-              Přehled hlavních služeb a řešení, které poskytujeme našim klientům na míru.
+              Kompletní servis v oblasti hudební produkce, techniky i uměleckého zastoupení.
             </p>
           </FadeUp>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                icon: '🛠️',
-                title: 'Služba na míru A',
-                desc: 'Podrobný popis první klíčové služby. Vysvětlete, v čem spočívá její hlavní přínos pro zákazníka.',
+                icon: '🎙️',
+                title: 'Nahrávací studio',
+                desc: 'Studio Accent s historií od roku 1998 nabízí high-end záznam, mix a mastering s využitím špičkové analogové techniky.',
               },
               {
-                icon: '⚡',
-                title: 'Rychlá implementace',
-                desc: 'Vysvětlete, jak efektivně a rychle dokážete doručit výsledky bez ztráty kvality.',
+                icon: '🎷',
+                title: 'Umělecká agentura',
+                desc: 'Zajištění kulturních akcí na klíč, zprostředkování umělců jako ABBA STAR, moderátorů a ozvučení.',
               },
               {
-                icon: '📊',
-                title: 'Analýza a Strategie',
-                desc: 'Popište svůj proces plánování a analytický přístup, který zajišťuje nejlepší možné výsledky.',
+                icon: '🎸',
+                title: 'Dovoz a prodej',
+                desc: 'Výhradní distribuce japonských kytar TOKAI, mikrofonů MineSound a další hudební techniky.',
               },
               {
-                icon: '🛡️',
-                title: 'Podpora a Servis',
-                desc: 'Garance kvality a následná péče o klienta, kterou poskytujete po dokončení zakázky.',
+                icon: '💿',
+                title: 'Vydavatelství',
+                desc: 'Kompletní servis pro vydávání CD a vinylů pro kapely i sólové interprety.',
               },
               {
-                icon: '🌐',
-                title: 'Moderní Technologie',
-                desc: 'Využití nejnovějších postupů a nástrojů v oboru, které vám dávají náskok před konkurencí.',
+                icon: '🎤',
+                title: 'Karaoke produkce',
+                desc: 'Výroba a prodej profesionálních karaoke skladeb s živě nahranými nástroji pro nejlepší zážitek.',
               },
               {
-                icon: '💎',
-                title: 'Prémiová Kvalita',
-                desc: 'Důraz na detail a vysokou úroveň zpracování u každého projektu bez výjimek.',
+                icon: '🔋',
+                title: 'Zdravotní technika',
+                desc: 'Dovoz a prodej generátorů vodíku a kyslíkových koncentrátorů pro regeneraci a vitalitu.',
               },
             ].map(({ icon, title, desc }, i) => (
               <FadeUp
@@ -208,10 +202,10 @@ export default function HomePage() {
           </div>
           <div className="mt-12 text-center">
             <Link
-              href="/sluzby"
+              href="https://eshop.acmusic.cz"
               className={btnPrimary}
             >
-              Kompletní ceník
+              Přejít do E-shopu
             </Link>
           </div>
         </div>

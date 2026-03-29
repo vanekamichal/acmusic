@@ -3,46 +3,20 @@ import Head from 'next/head';
 import FadeUp from '@/components/FadeUp';
 import PageHero from '@/components/PageHero';
 
-const contactItems = [
+const contactData = [
   {
-    icon: '📍',
-    label: 'Adresa',
-    value: (
-      <>
-        Ulice 123
-        <br />
-        123 45 Město
-      </>
-    ),
+    title: 'Hudební produkce, agentura, technika',
+    scope: 'Hudební nástroje a technika, hudební vydavatelství, kyslíkové koncentrátory, vodíkové generátory, sterilizátory.',
+    email: 'acmusic@email.cz',
+    tel: '603 332 100',
+    img: 'https://acmusic.eu/wp-content/uploads/2024/01/AC-MUSIC-KRUHM.png',
   },
   {
-    icon: '📞',
-    label: 'Telefon',
-    value: (
-      <a
-        href="tel:+420000000000"
-        className="text-[#60a5fa] transition-opacity hover:opacity-80"
-      >
-        +420 000 000 000
-      </a>
-    ),
-  },
-  {
-    icon: '✉️',
-    label: 'E-mail',
-    value: (
-      <a
-        href="mailto:info@vasedomena.cz"
-        className="text-[#60a5fa] transition-opacity hover:opacity-80"
-      >
-        info@vasedomena.cz
-      </a>
-    ),
-  },
-  {
-    icon: '🕐',
-    label: 'Otevírací doba',
-    value: 'Po–Pá: 9:00 – 17:00 (nebo dle dohody)',
+    title: 'Nahrávací a produkční studio, karaoke',
+    scope: 'Studio Accent, výroba a prodej karaoke písní.',
+    email: 'accent@razdva.cz',
+    tel: '603 332 100, 777 659 113',
+    img: 'https://acmusic.eu/wp-content/uploads/2024/01/logo_new-removebg.png',
   },
 ];
 
@@ -50,124 +24,70 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Kontakt – AC MUSIC</title>
+        <title>KONTAKTY – AC MUSIC</title>
         <meta
           name="description"
-          content="Kontaktujte nás pro více informací o našich službách. Adresa, telefon, e-mail a mapa sídla naší firmy."
+          content="Kontaktujte nás pro hudební produkci, studiové náhrávání, karaoke nebo zdravotní techniku."
         />
       </Head>
 
       <PageHero
         title={
           <>
-            <span className="text-[#60a5fa]">Kontaktujte</span> nás
+            KON<span className="text-[#60a5fa]">TAKTY</span>
           </>
         }
-        description="Rádi si s vámi popovídáme o vašem projektu nebo budoucí spolupráci. Ozvěte se nám libovolným způsobem."
+        description="Jsme vám k dispozici pro veškeré dotazy a poptávky."
       />
 
-      {/* Kontaktní info */}
       <section className="w-full py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
-          <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2">
-            {/* Info sloupec */}
-            <FadeUp>
-              <span className="mb-4 inline-block rounded-full border border-[rgba(59,130,246,0.35)] bg-[rgba(59,130,246,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#60a5fa] uppercase">
-                Kde nás najdete
-              </span>
-              <h2 className="h2-section mb-2 text-white">Kontaktní informace</h2>
-              <span className="mt-3 mb-8 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
-
-              <div>
-                {contactItems.map(({ icon, label, value }) => (
-                  <div
-                    key={label}
-                    className="flex items-start gap-4 border-b border-white/10 py-5 last:border-b-0"
-                  >
-                    <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl border border-[rgba(59,130,246,0.2)] bg-[rgba(59,130,246,0.1)] text-lg">
-                      {icon}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {contactData.map((contact, idx) => (
+              <FadeUp key={contact.title} delay={idx * 0.1}>
+                <div className="flex flex-col h-full bg-white/5 border border-white/10 rounded-2xl p-10 shadow-2xl transition-all duration-300 hover:border-[#3b82f6]/30">
+                  <div className="mb-8 flex justify-center">
+                    <img
+                      src={contact.img}
+                      alt={contact.title}
+                      className="h-32 w-auto object-contain brightness-110"
+                    />
+                  </div>
+                  <h2 className="text-2xl font-outfit font-extrabold text-white mb-4 tracking-tight uppercase text-center">
+                    {contact.title}
+                  </h2>
+                  <p className="text-[#8888a0] mb-8 text-center flex-grow">
+                    {contact.scope}
+                  </p>
+                  <div className="mt-auto space-y-6 pt-8 border-t border-white/10 text-center">
+                    <div>
+                      <div className="text-xs text-[#3b82f6] font-bold tracking-widest uppercase mb-2">E-mail:</div>
+                      <a
+                        href={`mailto:${contact.email}`}
+                        className="text-xl font-bold text-white hover:text-[#60a5fa] transition-colors"
+                      >
+                        {contact.email}
+                      </a>
                     </div>
                     <div>
-                      <div className="mb-1 text-xs tracking-widest text-[#8888a0] uppercase">
-                        {label}
+                      <div className="text-xs text-[#3b82f6] font-bold tracking-widest uppercase mb-2">Tel.:</div>
+                      <div className="text-xl font-bold text-white">
+                        {contact.tel}
                       </div>
-                      <div className="font-medium text-white">{value}</div>
                     </div>
                   </div>
-                ))}
-              </div>
-
-              {/* Sociální sítě */}
-              <div className="mt-8">
-                <div className="mb-4 text-xs tracking-widest text-[#8888a0] uppercase">
-                  Sledujte nás
                 </div>
-                <div className="flex flex-wrap gap-3">
-                  {[
-                    { href: 'https://www.facebook.com', label: 'f Facebook' },
-                    { href: 'https://linkedin.com', label: 'in LinkedIn' },
-                    { href: 'https://instagram.com', label: '📷 Instagram' },
-                  ].map(({ href, label }) => (
-                    <a
-                      key={label}
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded border border-white/10 px-5 py-2 text-sm font-semibold text-[#e8e8f0] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#3b82f6] hover:text-[#60a5fa]"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </FadeUp>
-
-            {/* Kontaktní CTA karta */}
-            <FadeUp delay={0.1}>
-              <div className="rounded-2xl border border-[rgba(59,130,246,0.25)] bg-gradient-to-br from-[rgba(59,130,246,0.12)] to-[rgba(59,130,246,0.04)] p-10 text-center">
-                <span className="mb-4 block text-4xl">✉️</span>
-                <h3 className="h3-card mb-3 text-[1.4rem] text-white">Poptat spolupráci</h3>
-                <p className="mb-8 leading-relaxed text-[#8888a0]">
-                  Zavolejte nebo napište e-mail — rádi s vámi probereme vaše zadání a připravíme
-                  nabídku přímo na míru. Úvodní konzultace je nezávazná.
-                </p>
-                <a
-                  href="tel:+420000000000"
-                  className="mb-3 inline-flex w-full items-center justify-center gap-2 rounded bg-gradient-to-br from-[#2563eb] to-[#3b82f6] px-7 py-3 text-sm font-semibold text-black transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
-                >
-                  📞 +420 000 000 000
-                </a>
-                <a
-                  href="mailto:info@vasedomena.cz"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded border border-white/10 px-7 py-3 text-sm font-semibold text-[#e8e8f0] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#3b82f6] hover:text-[#60a5fa]"
-                >
-                  ✉️ info@vasedomena.cz
-                </a>
-              </div>
-            </FadeUp>
+              </FadeUp>
+            ))}
           </div>
-        </div>
-      </section>
 
-      {/* Mapa */}
-      <section className="w-full border-t border-white/10 bg-[#111118] py-12">
-        <div className="mx-auto w-[90vw] max-w-[1200px]">
-          <FadeUp className="mb-8 text-center">
-            <h2 className="h2-section mb-2 text-white">Kde nás najdete</h2>
-            <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#3b82f6] to-[#60a5fa]" />
-          </FadeUp>
-          <FadeUp>
-            <div className="aspect-[16/7] w-full overflow-hidden rounded-2xl border border-white/10">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.6!2d14.4!3d50.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zTWVsbm92!5e0!3m2!1scs!2scz!4v1700000000000"
-                className="h-full w-full border-none"
-                style={{ filter: 'grayscale(0.6) invert(0.9)' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Mapa – Sídlo firmy, Ulice 123, Město"
-              />
-            </div>
+          <FadeUp className="mt-24 text-center">
+            <h3 className="text-xl font-bold text-white mb-6 uppercase">SÍDLO SPOLEČNOSTI</h3>
+            <p className="text-[#8888a0] text-lg">
+              AC MUSIC s.r.o.
+              <br />
+              (Další údaje dle obchodního rejstříku)
+            </p>
           </FadeUp>
         </div>
       </section>

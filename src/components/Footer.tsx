@@ -1,18 +1,20 @@
 import Link from 'next/link';
 
 const pages = [
-  { href: '/', label: 'Úvod' },
-  { href: '/about', label: 'O nás' },
-  { href: '/sluzby', label: 'Služby' },
-  { href: '/reference', label: 'Reference' },
+  { href: '/', label: 'Domů' },
+  { href: '/agentura', label: 'Agentura' },
+  { href: '/studio', label: 'Studio' },
+  { href: '/vydavatelstvi', label: 'Vydavatelství' },
+  { href: '/karaoke', label: 'Karaoke' },
   { href: '/contact', label: 'Kontakt' },
 ];
 
 const services = [
-  { href: '/sluzby', label: 'Hlavní Služba A' },
-  { href: '/sluzby', label: 'Hlavní Služba B' },
-  { href: '/sluzby', label: 'Doplňková Služba' },
-  { href: '/sluzby', label: 'Ostatní' },
+  { href: '/agentura', label: 'Umělecká agentura' },
+  { href: '/studio', label: 'Studio Accent' },
+  { href: '/vydavatelstvi', label: 'Vydavatelství' },
+  { href: '/karaoke', label: 'Karaoke produkce' },
+  { href: '/dovoz', label: 'Dovoz kytar Tokai' },
 ];
 
 export default function Footer() {
@@ -70,22 +72,22 @@ export default function Footer() {
               Kontakt
             </h4>
             <a
-              href="mailto:info@vasedomena.cz"
+              href="mailto:acmusic@email.cz"
               className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#60a5fa]"
             >
-              info@vasedomena.cz
+              acmusic@email.cz
             </a>
             <a
-              href="tel:+420000000000"
+              href="tel:+420603332100"
               className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#60a5fa]"
             >
-              +420 000 000 000
+              +420 603 332 100
             </a>
             <Link
               href="/contact"
               className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#60a5fa]"
             >
-              Ulice 123, Město
+              AC MUSIC s.r.o.
             </Link>
           </div>
         </div>

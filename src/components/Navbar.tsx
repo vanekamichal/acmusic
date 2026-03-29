@@ -3,10 +3,13 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 const navLinks = [
-  { href: '/', label: 'Úvod' },
-  { href: '/about', label: 'O nás' },
-  { href: '/sluzby', label: 'Služby' },
-  { href: '/reference', label: 'Reference' },
+  { href: '/', label: 'Domů' },
+  { href: '/agentura', label: 'AGENTURA' },
+  { href: '/studio', label: 'STUDIO' },
+  { href: '/vydavatelstvi', label: 'VYDAVATELSTVÍ' },
+  { href: 'https://vyhodnynakup.eu/', label: 'ESHOP' },
+  { href: '/karaoke', label: 'KARAOKE' },
+  { href: '/dovoz', label: 'DOVOZ' },
 ];
 
 export default function Navbar() {
